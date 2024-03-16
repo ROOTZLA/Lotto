@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Yrkesprov ProgrammeringTLPU23H dag2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/app.css">
+    </head>
+    <body>
+        <h1 class="imageText">Test your luck!</h1>
+        <div id="selectionWindow">
+            <div class="parent">
+                <div class="div1">
+                    <div class="content">
+                        <img src="/img/rules.gif" class="pic1">
+                        <div id="gameText"></div>
+                    </div>
+                </div>
+                <div class="div2">
+                    <div class="logo" id="logo"></div>
+                    <div class="container2">           
+                        <label for="gameSelect">Välj spel:</label>
+                        <select id="gameSelect">
+                            <option value="Lotto">Lotto</option>
+                            <option value="EuroJackpot">EuroJackpot</option>
+                            <option value="VikingLotto">VikingLotto</option>
+                            <option value="Keno">Keno</option>
+                        </select>
+                        <label for="numberSelect">Välj siffror:</label>
+                        <select id="numberSelect"></select>
+                        <label for="lNumberSelect">Välj L-siffror:</label>
+                        <select id="lNumberSelect"></select>
+                        <label for="rowsSelect">Välj rader:</label>
+                        <select id="rowsSelect">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>    
+                    </div>
+                    <button id="button">Generate numbers</button>
+                </div>    
+                <div class="div3">
+                    <div class="content" id="bonus">
+                        <img src="/img/bonus2.gif">
+                        <div id="gameText2">
+                            <p>Spel kan vara beroendeframkallande. Om du är orolig för att spela, vänligen kontakta oss!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div4">
+                <div id="mainNumbers" class="numbers-container"></div>
+            </div>
+            <div class="div5">
+                <div id="lNumbers" class="numbers-container"></div>
+            </div>    
+        </div>  
+        <script src="./js/app.js" async defer></script>
+    </body>
+</html>

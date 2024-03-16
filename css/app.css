@@ -1,0 +1,214 @@
+/*Font from google */
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="styleshee');
+
+/* Main */
+body {
+    background-image: url(/img/fon2.jpg);
+    background-color: black;
+}
+
+h1 {
+    font-family: "Salsa", cursive;
+    font-weight: 700px;
+    font-size: 100px;
+    font-style: normal;
+    text-align: center;
+    margin: 30px;
+}
+p {
+    margin-top: 30px;
+}
+
+/* animation for text */
+.imageText {
+    background-image: url(/img/fire.gif);
+    background-size: cover;
+    background-clip: text;
+    background-position: center; 
+    -webkit-background-clip: text;
+    color: transparent;
+     
+}
+/* Main end */
+
+/* Main windows with mirrow effect :) */
+#selectionWindow {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding-top: 10px;
+
+}
+/* Main grid */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+
+}
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    padding: 15px 20px;
+    border: 0.5px solid rgb(255, 255, 255, 0.5);
+    border-style: ridge;
+    border-radius: 16px;
+    margin: 5px;
+    margin-left: 10px;
+}
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 15px 20px;
+    border: 0.5px solid rgb(255, 255, 255, 0.5);
+    border-style: ridge;
+    border-radius: 16px;
+    margin: 5px;
+    margin-left: 10px;
+}
+.div3 { 
+    grid-area: 1 / 3 / 2 / 4;
+    padding: 15px 20px;
+    border: 0.5px solid rgb(255, 255, 255, 0.5);
+    border-style: ridge;
+    border-radius: 16px;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* div1 */
+.pic1 {
+    width: 100%; 
+    max-width: 100%; 
+    outline-style: solid;
+    outline-color: #e7e7e7;
+    border-radius: 16px;
+}
+
+#gameText, #gameText2 {
+    color: #e7e7e7;
+    font-size: 25px;
+    padding-top: 1.4rem;
+    margin: 0;
+}
+
+/* div2 start */
+/* logo image */
+img {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto;
+    outline-style: solid;
+    outline-color: #e7e7e7;
+    border-radius: 16px;
+}
+
+/* grid start*/
+.container2 {
+    width: 100%; 
+    max-width: 100%; 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: aliceblue;
+    font-size: 1.4rem;
+    text-align: left;
+    padding-top:50px;
+}
+.logo {
+    width: 100%; 
+    max-width: 100%;
+    border-radius: 16px;
+}
+select {
+    border-radius: 6px;
+    margin-top: 5px;
+    background-color: rgba(227, 238, 247, 0.8);
+    text-align: right;
+} 
+
+#gameSelect, #numberSelect, #lNumberSelect, #rowsSelect {
+    padding-top: 5px;
+    font-size: 17px;
+    text-align: center;
+}
+/* grid end*/
+
+/* button "Generate numbers */
+#button {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: white;
+    border: 2px solid #e7e7e7;
+    border-radius: 16px;
+    padding: 20px 30px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+}
+#button:hover {
+    background-color: rgb(250, 137, 199, 0.4);
+    color: white;
+}
+/* div2 end */
+
+/*div3*/
+.bonus {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto;
+    outline-style: solid;
+    outline-color: #e7e7e7;
+    border-radius: 16px;
+
+}
+
+/*div4 and div5*/
+#mainNumbers, #lNumbers {
+    background-color: rgba(227, 238, 247, 0.3);
+    border: 0.5px solid black;
+    border-style: solid;
+    border-radius: 16px;
+    padding: 20px 30px;
+    font-size: 1.4rem;
+    white-space: pre-line;
+    margin: 10px;
+}
+
+
+@media (max-width: 1250px)
+{
+    .container2 {
+        grid-template-columns: 80% 20%;
+        font-size: 25px;
+
+    }
+    
+}
+@media (max-width: 1000px)
+{
+    #selectionWindow {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 25%;
+        left: 25%;
+    }
+   
+}
